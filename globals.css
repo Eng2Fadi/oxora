@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body {
+  @apply bg-bg text-white antialiased;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(110,168,254,.20), transparent 30%),
+    radial-gradient(circle at 80% 10%, rgba(139,92,246,.18), transparent 25%),
+    linear-gradient(180deg, #06101d 0%, #081423 100%);
+}
+.container-shell { @apply mx-auto w-[min(1220px,calc(100%-32px))]; }
+.glass { @apply border border-white/10 bg-white/[0.03] shadow-soft backdrop-blur; }
+.section-space { @apply py-16 md:py-24; }
+.eyebrow { @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-xs font-semibold tracking-wide text-slate-200; }
+.eyebrow::before { content: ""; @apply h-2 w-2 rounded-full; background: linear-gradient(135deg, #6ea8fe, #8b5cf6); box-shadow: 0 0 18px rgba(110,168,254,.8); }
+.btn-primary { @apply inline-flex items-center justify-center rounded-xl px-5 py-3.5 font-semibold text-white transition hover:-translate-y-0.5; background: linear-gradient(135deg, #6ea8fe, #8b5cf6); box-shadow: 0 12px 30px rgba(110,168,254,.28); }
+.btn-secondary { @apply inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] px-5 py-3.5 font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/[0.06]; }
+.card { @apply glass rounded-3xl p-6; }
+.input { @apply w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-white outline-none placeholder:text-slate-500 focus:border-primary/40; }
+.kbd { @apply rounded border border-white/10 bg-black/30 px-2 py-1 text-xs text-slate-300; }
+.prose-invert-custom p { @apply mt-4 text-slate-300; }
