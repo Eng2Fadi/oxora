@@ -5,13 +5,11 @@ import { brand } from "@/components/site-data";
 import { AppProviders } from "@/components/Providers";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(brand.domain),
   title: { default: brand.name, template: `%s | ${brand.name}` },
   description: brand.tagline,
   openGraph: {
     title: brand.name,
     description: brand.tagline,
-    url: brand.domain,
     siteName: brand.name,
     type: "website"
   },
