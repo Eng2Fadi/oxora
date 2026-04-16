@@ -44,7 +44,7 @@ export async function getUsageSummary(userId: string): Promise<UsageSummary> {
 }
 
 export async function requireUsage(moduleName: string) {
-  const userId = hasClerk() ? auth().userId : "demo-user";
+  const userId = hasClerk() ? (await auth()).userId : "demo-user";
   if (!userId) {
     return { ok: false as const, status: 401, error: "Unauthorized" };
   }
