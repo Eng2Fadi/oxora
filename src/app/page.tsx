@@ -13,21 +13,27 @@ const proofStats = [
   { value: 87, suffix: "", label: "منشور شهريًا" },
 ];
 
+const problemPoints = [
+  "أفكار تنتهي بسرعة",
+  "محتوى لا يجذب التفاعل",
+  "لا تعرف ما الذي يعمل فعلًا",
+];
+
 const featureCards = [
   {
     icon: "✍️",
-    title: "محتوى أقوى",
+    title: "محتوى يعبّر عنك",
     desc: "أنشئ منشورات LinkedIn بصوتك، لا نصوصًا عامة بلا شخصية.",
   },
   {
     icon: "🪝",
-    title: "Hooks تشد الانتباه",
-    desc: "ابدأ كل منشور بصيغة ترفع القراءة والتفاعل من أول سطر.",
+    title: "Hooks ترفع التفاعل من أول سطر",
+    desc: "ابدأ كل منشور بصيغة أقوى تشد الانتباه وتزيد فرص القراءة والتفاعل.",
   },
   {
     icon: "📈",
-    title: "تحسين مستمر",
-    desc: "حلّل أداءك وطوّر المحتوى بناءً على نتائج فعلية، لا تخمين.",
+    title: "تحسين مبني على بيانات حقيقية",
+    desc: "حلّل الأداء وطوّر المحتوى بناءً على نتائج فعلية، لا على تخمينات.",
   },
 ];
 
@@ -121,7 +127,8 @@ export default function Home() {
             </a>
 
             <div className="navLinks desktopOnly">
-              <a href="#features">المنتج</a>
+              <a href="#problem">المشكلة</a>
+              <a href="#features">المزايا</a>
               <a href="#how">كيف يعمل</a>
               <a href="#pricing">الأسعار</a>
               <a href="#faq">الأسئلة</a>
@@ -149,7 +156,8 @@ export default function Home() {
         {mobileOpen && (
           <div className="mobilePanel">
             <div className="mobilePanelInner">
-              <a href="#features" onClick={() => setMobileOpen(false)}>المنتج</a>
+              <a href="#problem" onClick={() => setMobileOpen(false)}>المشكلة</a>
+              <a href="#features" onClick={() => setMobileOpen(false)}>المزايا</a>
               <a href="#how" onClick={() => setMobileOpen(false)}>كيف يعمل</a>
               <a href="#pricing" onClick={() => setMobileOpen(false)}>الأسعار</a>
               <a href="#faq" onClick={() => setMobileOpen(false)}>الأسئلة</a>
@@ -167,29 +175,29 @@ export default function Home() {
             </div>
 
             <h1 className="heroTitle">
-              حوّل <span>LinkedIn</span>
+              LinkedIn لا يحتاج ضجيجًا
               <br />
-              إلى مصدر عملاء حقيقي
+              بل نظامًا <span>يجلب عملاء فعليين</span>
             </h1>
 
             <p className="heroDesc">
-              Oxora يمنحك نظامًا أوضح لإنشاء محتوى أقوى، جذب الانتباه، وتحويل
-              LinkedIn إلى قناة فرص ومبيعات بدل مجرد حضور رقمي.
+              أنشئ محتوى يجذب الانتباه، وابنِ نظامًا يحول المتابعين إلى فرص
+              ومبيعات — بدون تخمين أو عشوائية.
             </p>
 
             <div className="heroActions">
               <a href="#pricing" className="btn primary large">
-                ابدأ تجربتك المجانية →
+                ابدأ مجانًا
               </a>
               <a href="#how" className="btn secondary large">
-                كيف يعمل؟
+                شاهد كيف يعمل →
               </a>
             </div>
 
             <div className="heroMeta">
               <span><i /> بدون بطاقة ائتمان</span>
-              <span><i /> إعداد في دقيقتين</span>
-              <span><i /> دعم عربي كامل</span>
+              <span><i /> ابدأ خلال دقيقتين</span>
+              <span><i /> مخصص للمحترفين العرب</span>
             </div>
 
             <div className="mockup">
@@ -232,6 +240,11 @@ export default function Home() {
 
         <section className="proof">
           <div className="shell">
+            <div className="sectionHead compact">
+              <span className="eyebrow">نتائج أولية</span>
+              <h2>نتائج حققها مستخدمو Oxora</h2>
+            </div>
+
             <div className="proofGrid">
               {proofStats.map((item, i) => (
                 <div className="card proofCard" key={item.label}>
@@ -240,6 +253,25 @@ export default function Home() {
                     {item.suffix}
                   </div>
                   <div className="proofLabel">{item.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="problem" className="section sectionAlt">
+          <div className="shell">
+            <div className="sectionHead">
+              <span className="eyebrow">المشكلة</span>
+              <h2>المشكلة ليست في LinkedIn</h2>
+              <p>بل في غياب نظام واضح يصنع نتائج قابلة للتكرار</p>
+            </div>
+
+            <div className="problemGrid">
+              {problemPoints.map((item) => (
+                <div key={item} className="card problemCard">
+                  <span className="problemIcon">✕</span>
+                  <p>{item}</p>
                 </div>
               ))}
             </div>
@@ -294,8 +326,11 @@ export default function Home() {
           <div className="shell">
             <div className="sectionHead">
               <span className="eyebrow">الأسعار</span>
-              <h2>ابدأ خفيفًا. وسّع مع نموك.</h2>
-              <p>تسعير مباشر وواضح، بلا طبقات معقدة ولا ضوضاء تسويقية.</p>
+              <h2>ابدأ بدون مخاطرة</h2>
+              <p>
+                جرّب Oxora مجانًا، وإذا لم يساعدك في إنتاج محتوى أفضل خلال أسبوع
+                — لا تدفع شيئًا.
+              </p>
             </div>
 
             <div className="pricingGrid">
@@ -434,18 +469,18 @@ export default function Home() {
             <div className="ctaBox">
               <span className="eyebrow">ابدأ اليوم</span>
               <h2>
-                LinkedIn لا يحتاج ضجيجًا
+                LinkedIn لن ينمو بالصدفة
                 <br />
-                بل نظامًا يعمل
+                بل بنظام
               </h2>
               <p>
-                إذا كنت تريد نتيجة أوضح، محتوى أقوى، وتجربة أقل فوضى، فهذه هي
-                نقطة البداية الصحيحة.
+                ابدأ الآن، وابنِ أول نظام محتوى لك خلال دقائق بدل الدوران في
+                نفس الحلقة كل أسبوع.
               </p>
 
               <div className="ctaActions">
                 <a href="#pricing" className="btn primary">
-                  ابدأ مجانًا — لا بطاقة مطلوبة
+                  ابدأ مجانًا
                 </a>
                 <a href="#contact" className="btn secondary">
                   تحدث مع الفريق
@@ -461,7 +496,8 @@ export default function Home() {
               <div>
                 <a href="#hero" className="logo">Oxora</a>
                 <p className="footerBrand">
-                  نظام AI لنمو LinkedIn — أقل ضجيج، أوضح قيمة، ونتائج أكثر قابلية للقياس.
+                  نظام يساعدك على تحويل LinkedIn إلى مصدر عملاء — بطريقة واضحة
+                  وقابلة للقياس.
                 </p>
               </div>
 
@@ -745,7 +781,7 @@ export default function Home() {
           line-height: 1.08;
           letter-spacing: -0.045em;
           margin: 0 auto 18px;
-          max-width: 720px;
+          max-width: 760px;
           font-weight: 800;
         }
 
@@ -759,7 +795,7 @@ export default function Home() {
         .heroDesc {
           font-size: clamp(1rem, 2vw, 1.12rem);
           color: #94a3b8;
-          max-width: 580px;
+          max-width: 600px;
           margin: 0 auto 30px;
           line-height: 1.85;
         }
@@ -769,7 +805,7 @@ export default function Home() {
           justify-content: center;
           gap: 14px;
           flex-wrap: wrap;
-          margin-bottom: 22px;
+          margin-bottom: 20px;
         }
 
         .heroMeta {
@@ -951,6 +987,10 @@ export default function Home() {
           margin-bottom: 50px;
         }
 
+        .sectionHead.compact {
+          margin-bottom: 24px;
+        }
+
         .sectionHead h2 {
           font-size: clamp(1.95rem, 4vw, 2.8rem);
           margin: 14px 0 0;
@@ -966,14 +1006,36 @@ export default function Home() {
           line-height: 1.75;
         }
 
+        .problemGrid,
         .featuresGrid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 20px;
         }
 
+        .problemCard,
         .featureCard {
           padding: 28px 24px;
+        }
+
+        .problemIcon {
+          display: inline-flex;
+          width: 42px;
+          height: 42px;
+          border-radius: 12px;
+          align-items: center;
+          justify-content: center;
+          background: rgba(239, 68, 68, 0.14);
+          color: #f87171;
+          font-weight: 800;
+          margin-bottom: 16px;
+        }
+
+        .problemCard p {
+          margin: 0;
+          color: #d8e0ee;
+          line-height: 1.8;
+          font-size: 0.98rem;
         }
 
         .featureIcon {
@@ -1383,6 +1445,7 @@ export default function Home() {
           .contactGrid,
           .pricingGrid,
           .featuresGrid,
+          .problemGrid,
           .footerGrid,
           .mockupBody,
           .proofGrid {
@@ -1430,6 +1493,7 @@ export default function Home() {
           .heroMeta {
             gap: 12px;
             flex-direction: column;
+            margin-bottom: 34px;
           }
 
           .ctaBox {
