@@ -156,13 +156,27 @@ export default function Home() {
         {mobileOpen && (
           <div className="mobilePanel">
             <div className="mobilePanelInner">
-              <a href="#problem" onClick={() => setMobileOpen(false)}>المشكلة</a>
-              <a href="#features" onClick={() => setMobileOpen(false)}>المزايا</a>
-              <a href="#how" onClick={() => setMobileOpen(false)}>كيف يعمل</a>
-              <a href="#pricing" onClick={() => setMobileOpen(false)}>الأسعار</a>
-              <a href="#faq" onClick={() => setMobileOpen(false)}>الأسئلة</a>
-              <a href="#contact" onClick={() => setMobileOpen(false)}>تواصل</a>
-              <a href="/dashboard" onClick={() => setMobileOpen(false)}>تسجيل الدخول</a>
+              <a href="#problem" onClick={() => setMobileOpen(false)}>
+                المشكلة
+              </a>
+              <a href="#features" onClick={() => setMobileOpen(false)}>
+                المزايا
+              </a>
+              <a href="#how" onClick={() => setMobileOpen(false)}>
+                كيف يعمل
+              </a>
+              <a href="#pricing" onClick={() => setMobileOpen(false)}>
+                الأسعار
+              </a>
+              <a href="#faq" onClick={() => setMobileOpen(false)}>
+                الأسئلة
+              </a>
+              <a href="#contact" onClick={() => setMobileOpen(false)}>
+                تواصل
+              </a>
+              <a href="/dashboard" onClick={() => setMobileOpen(false)}>
+                تسجيل الدخول
+              </a>
             </div>
           </div>
         )}
@@ -175,29 +189,35 @@ export default function Home() {
             </div>
 
             <h1 className="heroTitle">
-              LinkedIn لا يحتاج ضجيجًا
+              حوّل <span>LinkedIn</span>
               <br />
-              بل نظامًا <span>يجلب عملاء فعليين</span>
+              إلى مصدر عملاء حقيقي
             </h1>
 
             <p className="heroDesc">
-              أنشئ محتوى يجذب الانتباه، وابنِ نظامًا يحول المتابعين إلى فرص
-              ومبيعات — بدون تخمين أو عشوائية.
+              Oxora يمنحك نظامًا أوضح لإنشاء محتوى أقوى، جذب الانتباه، وتحويل
+              LinkedIn إلى فرص ومبيعات.
             </p>
 
             <div className="heroActions">
               <a href="#pricing" className="btn primary large">
-                ابدأ مجانًا
+                ابدأ تجربتك المجانية →
               </a>
-              <a href="#how" className="btn secondary large">
+              <a href="#how" className="btn secondary large secondaryCta">
                 شاهد كيف يعمل →
               </a>
             </div>
 
             <div className="heroMeta">
-              <span><i /> بدون بطاقة ائتمان</span>
-              <span><i /> ابدأ خلال دقيقتين</span>
-              <span><i /> مخصص للمحترفين العرب</span>
+              <span>
+                <i /> بدون بطاقة ائتمان
+              </span>
+              <span>
+                <i /> إعداد في دقيقتين
+              </span>
+              <span>
+                <i /> دعم عربي كامل
+              </span>
             </div>
 
             <div className="mockup">
@@ -347,7 +367,9 @@ export default function Home() {
                   <li>5 hooks يوميًا</li>
                   <li>لوحة بسيطة</li>
                 </ul>
-                <a href="#" className="btn secondary full">ابدأ مجانًا</a>
+                <a href="#" className="btn secondary full">
+                  ابدأ مجانًا
+                </a>
               </div>
 
               <div className="card priceCard featured">
@@ -365,7 +387,9 @@ export default function Home() {
                   <li>تحليلات أوضح</li>
                   <li>دعم أولوي</li>
                 </ul>
-                <a href="#" className="btn primary full">ابدأ Pro →</a>
+                <a href="#" className="btn primary full">
+                  ابدأ Pro →
+                </a>
               </div>
 
               <div className="card priceCard">
@@ -379,7 +403,9 @@ export default function Home() {
                   <li>تكاملات أوسع</li>
                   <li>تهيئة خاصة</li>
                 </ul>
-                <a href="#contact" className="btn secondary full">تواصل معنا</a>
+                <a href="#contact" className="btn secondary full">
+                  تواصل معنا
+                </a>
               </div>
             </div>
           </div>
@@ -474,8 +500,8 @@ export default function Home() {
                 بل بنظام
               </h2>
               <p>
-                ابدأ الآن، وابنِ أول نظام محتوى لك خلال دقائق بدل الدوران في
-                نفس الحلقة كل أسبوع.
+                ابدأ الآن، وابنِ أول نظام محتوى لك خلال دقائق بدل الدوران في نفس
+                الحلقة كل أسبوع.
               </p>
 
               <div className="ctaActions">
@@ -494,7 +520,9 @@ export default function Home() {
           <div className="shell">
             <div className="footerGrid">
               <div>
-                <a href="#hero" className="logo">Oxora</a>
+                <a href="#hero" className="logo">
+                  Oxora
+                </a>
                 <p className="footerBrand">
                   نظام يساعدك على تحويل LinkedIn إلى مصدر عملاء — بطريقة واضحة
                   وقابلة للقياس.
@@ -532,8 +560,13 @@ export default function Home() {
       </main>
 
       <style jsx global>{`
-        * { box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
+        * {
+          box-sizing: border-box;
+        }
+
+        html {
+          scroll-behavior: smooth;
+        }
 
         body {
           margin: 0;
@@ -549,9 +582,21 @@ export default function Home() {
           position: fixed;
           inset: 0;
           background:
-            radial-gradient(ellipse 80% 50% at 15% 15%, rgba(110,168,254,.14), transparent),
-            radial-gradient(ellipse 60% 40% at 85% 5%, rgba(139,92,246,.12), transparent),
-            radial-gradient(ellipse 50% 60% at 50% 90%, rgba(34,211,238,.07), transparent);
+            radial-gradient(
+              ellipse 80% 50% at 15% 15%,
+              rgba(110, 168, 254, 0.14),
+              transparent
+            ),
+            radial-gradient(
+              ellipse 60% 40% at 85% 5%,
+              rgba(139, 92, 246, 0.12),
+              transparent
+            ),
+            radial-gradient(
+              ellipse 50% 60% at 50% 90%,
+              rgba(34, 211, 238, 0.07),
+              transparent
+            );
           pointer-events: none;
           z-index: 0;
         }
@@ -568,17 +613,17 @@ export default function Home() {
         }
 
         .card {
-          background: rgba(255,255,255,.03);
-          border: 1px solid rgba(255,255,255,.08);
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           border-radius: 22px;
           backdrop-filter: blur(12px);
           transition: 0.25s ease;
         }
 
         .card:hover {
-          border-color: rgba(110,168,254,.2);
+          border-color: rgba(110, 168, 254, 0.2);
           transform: translateY(-3px);
-          box-shadow: 0 0 28px rgba(110,168,254,.06);
+          box-shadow: 0 0 28px rgba(110, 168, 254, 0.06);
         }
 
         .btn {
@@ -597,7 +642,9 @@ export default function Home() {
           white-space: nowrap;
         }
 
-        .btn:hover { transform: translateY(-2px); }
+        .btn:hover {
+          transform: translateY(-2px);
+        }
 
         .btn.large {
           padding: 15px 28px;
@@ -607,34 +654,46 @@ export default function Home() {
         .btn.primary {
           background: linear-gradient(135deg, #6ea8fe, #8b5cf6);
           color: #fff;
-          box-shadow: 0 12px 32px rgba(110,168,254,.28);
+          box-shadow: 0 12px 32px rgba(110, 168, 254, 0.28);
         }
 
         .btn.secondary {
-          background: rgba(255,255,255,.03);
+          background: rgba(255, 255, 255, 0.03);
           color: #fff;
-          border: 1px solid rgba(255,255,255,.08);
+          border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .btn.ghost {
           background: transparent;
           color: #94a3b8;
-          border: 1px solid rgba(255,255,255,.08);
+          border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        .btn.full { width: 100%; }
+        .btn.full {
+          width: 100%;
+        }
+
+        .secondaryCta {
+          background: rgba(255, 255, 255, 0.045);
+          border-color: rgba(255, 255, 255, 0.16);
+          color: #f4f7fb;
+        }
+
+        .secondaryCta:hover {
+          background: rgba(255, 255, 255, 0.07);
+        }
 
         .eyebrow {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          border: 1px solid rgba(255,255,255,.08);
-          background: rgba(255,255,255,.03);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          background: rgba(255, 255, 255, 0.03);
           padding: 6px 14px;
           border-radius: 999px;
           font-size: 0.72rem;
           font-weight: 700;
-          letter-spacing: .08em;
+          letter-spacing: 0.08em;
           color: #cbd5e1;
         }
 
@@ -644,7 +703,7 @@ export default function Home() {
           height: 7px;
           border-radius: 50%;
           background: linear-gradient(135deg, #6ea8fe, #8b5cf6);
-          box-shadow: 0 0 12px rgba(110,168,254,.8);
+          box-shadow: 0 0 12px rgba(110, 168, 254, 0.8);
         }
 
         .tag {
@@ -653,9 +712,9 @@ export default function Home() {
           border-radius: 8px;
           font-size: 0.72rem;
           font-weight: 700;
-          background: rgba(110,168,254,.12);
+          background: rgba(110, 168, 254, 0.12);
           color: #6ea8fe;
-          border: 1px solid rgba(110,168,254,.2);
+          border: 1px solid rgba(110, 168, 254, 0.2);
         }
 
         .nav {
@@ -663,8 +722,8 @@ export default function Home() {
           top: 0;
           z-index: 100;
           padding: 14px 0;
-          border-bottom: 1px solid rgba(255,255,255,.08);
-          background: rgba(5,13,26,.72);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          background: rgba(5, 13, 26, 0.72);
           backdrop-filter: blur(20px);
         }
 
@@ -707,7 +766,7 @@ export default function Home() {
 
         .navLinks a:hover {
           color: #fff;
-          background: rgba(255,255,255,.03);
+          background: rgba(255, 255, 255, 0.03);
         }
 
         .navActions {
@@ -719,7 +778,7 @@ export default function Home() {
         .hamburger {
           display: none;
           background: none;
-          border: 1px solid rgba(255,255,255,.08);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           border-radius: 10px;
           padding: 8px 10px;
           color: #fff;
@@ -730,11 +789,11 @@ export default function Home() {
         .mobilePanel {
           position: fixed;
           inset: 73px 0 0 0;
-          background: rgba(5,13,26,.97);
+          background: rgba(5, 13, 26, 0.97);
           backdrop-filter: blur(18px);
           z-index: 95;
           padding: 22px 20px;
-          border-top: 1px solid rgba(255,255,255,.08);
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .mobilePanelInner {
@@ -749,8 +808,8 @@ export default function Home() {
           color: #e2e8f0;
           padding: 14px 16px;
           border-radius: 14px;
-          background: rgba(255,255,255,.03);
-          border: 1px solid rgba(255,255,255,.06);
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.06);
           font-size: 1rem;
           font-weight: 700;
         }
@@ -760,7 +819,7 @@ export default function Home() {
         }
 
         .hero {
-          padding: 104px 0 64px;
+          padding: 104px 0 52px;
           text-align: center;
         }
 
@@ -795,8 +854,8 @@ export default function Home() {
         .heroDesc {
           font-size: clamp(1rem, 2vw, 1.12rem);
           color: #94a3b8;
-          max-width: 600px;
-          margin: 0 auto 30px;
+          max-width: 560px;
+          margin: 0 auto 26px;
           line-height: 1.85;
         }
 
@@ -805,17 +864,18 @@ export default function Home() {
           justify-content: center;
           gap: 14px;
           flex-wrap: wrap;
-          margin-bottom: 20px;
+          margin-bottom: 18px;
         }
 
         .heroMeta {
           display: flex;
           justify-content: center;
+          align-items: center;
           gap: 18px;
           flex-wrap: wrap;
           color: #a7b4c9;
           font-size: 0.85rem;
-          margin-bottom: 42px;
+          margin-bottom: 28px;
         }
 
         .heroMeta span {
@@ -850,8 +910,8 @@ export default function Home() {
         }
 
         .mockupTop {
-          background: rgba(8,20,35,.95);
-          border: 1px solid rgba(255,255,255,.08);
+          background: rgba(8, 20, 35, 0.95);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           border-radius: 20px 20px 0 0;
           padding: 10px 18px;
           display: flex;
@@ -870,9 +930,15 @@ export default function Home() {
           border-radius: 50%;
         }
 
-        .dots span:nth-child(1) { background: #ff5f57; }
-        .dots span:nth-child(2) { background: #ffbd2e; }
-        .dots span:nth-child(3) { background: #28c840; }
+        .dots span:nth-child(1) {
+          background: #ff5f57;
+        }
+        .dots span:nth-child(2) {
+          background: #ffbd2e;
+        }
+        .dots span:nth-child(3) {
+          background: #28c840;
+        }
 
         .mockupUrl {
           flex: 1;
@@ -882,8 +948,8 @@ export default function Home() {
         }
 
         .mockupBody {
-          background: rgba(6,16,29,.95);
-          border: 1px solid rgba(255,255,255,.08);
+          background: rgba(6, 16, 29, 0.95);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           border-top: 0;
           border-radius: 0 0 20px 20px;
           padding: 28px 24px;
@@ -895,8 +961,8 @@ export default function Home() {
         .miniCard {
           padding: 18px;
           border-radius: 14px;
-          background: rgba(255,255,255,.03);
-          border: 1px solid rgba(255,255,255,.08);
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           text-align: center;
         }
 
@@ -922,9 +988,9 @@ export default function Home() {
           align-items: flex-end;
           gap: 6px;
           padding: 12px;
-          background: rgba(255,255,255,.02);
+          background: rgba(255, 255, 255, 0.02);
           border-radius: 14px;
-          border: 1px solid rgba(255,255,255,.08);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           overflow: hidden;
         }
 
@@ -938,8 +1004,12 @@ export default function Home() {
         }
 
         @keyframes barGrow {
-          from { transform: scaleY(0); }
-          to { transform: scaleY(1); }
+          from {
+            transform: scaleY(0);
+          }
+          to {
+            transform: scaleY(1);
+          }
         }
 
         .proof {
@@ -978,8 +1048,8 @@ export default function Home() {
         }
 
         .sectionAlt {
-          background: rgba(255,255,255,.012);
-          border-block: 1px solid rgba(255,255,255,.08);
+          background: rgba(255, 255, 255, 0.012);
+          border-block: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .sectionHead {
@@ -1048,7 +1118,7 @@ export default function Home() {
           justify-content: center;
           font-size: 1.3rem;
           margin-bottom: 18px;
-          box-shadow: 0 8px 24px rgba(110,168,254,.2);
+          box-shadow: 0 8px 24px rgba(110, 168, 254, 0.2);
         }
 
         .featureCard h3 {
@@ -1076,7 +1146,13 @@ export default function Home() {
           top: 0;
           bottom: 0;
           width: 2px;
-          background: linear-gradient(to bottom, transparent, #6ea8fe, #8b5cf6, transparent);
+          background: linear-gradient(
+            to bottom,
+            transparent,
+            #6ea8fe,
+            #8b5cf6,
+            transparent
+          );
           opacity: 0.3;
         }
 
@@ -1085,7 +1161,7 @@ export default function Home() {
           grid-template-columns: auto 1fr;
           gap: 24px;
           padding: 30px 0;
-          border-bottom: 1px solid rgba(255,255,255,.08);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .step:last-child {
@@ -1103,7 +1179,7 @@ export default function Home() {
           justify-content: center;
           font-size: 0.9rem;
           font-weight: 800;
-          box-shadow: 0 4px 18px rgba(110,168,254,.25);
+          box-shadow: 0 4px 18px rgba(110, 168, 254, 0.25);
         }
 
         .stepContent h3 {
@@ -1132,8 +1208,8 @@ export default function Home() {
         }
 
         .priceCard.featured {
-          border-color: rgba(110,168,254,.3);
-          background: rgba(110,168,254,.05);
+          border-color: rgba(110, 168, 254, 0.3);
+          background: rgba(110, 168, 254, 0.05);
         }
 
         .planBadge {
@@ -1194,7 +1270,7 @@ export default function Home() {
           color: #94a3b8;
           font-size: 0.9rem;
           padding: 7px 0;
-          border-bottom: 1px solid rgba(255,255,255,.04);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.04);
         }
 
         .priceCard li::before {
@@ -1212,10 +1288,10 @@ export default function Home() {
         }
 
         .faqItem {
-          border: 1px solid rgba(255,255,255,.08);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           border-radius: 16px;
           overflow: hidden;
-          background: rgba(255,255,255,.03);
+          background: rgba(255, 255, 255, 0.03);
         }
 
         .faqQ {
@@ -1322,8 +1398,8 @@ export default function Home() {
         .formGrid textarea {
           width: 100%;
           padding: 11px 14px;
-          background: rgba(255,255,255,.04);
-          border: 1px solid rgba(255,255,255,.08);
+          background: rgba(255, 255, 255, 0.04);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           border-radius: 12px;
           color: #fff;
           font-size: 0.92rem;
@@ -1332,7 +1408,7 @@ export default function Home() {
 
         .formGrid input:focus,
         .formGrid textarea:focus {
-          border-color: rgba(110,168,254,.45);
+          border-color: rgba(110, 168, 254, 0.45);
         }
 
         .cta {
@@ -1344,8 +1420,8 @@ export default function Home() {
           max-width: 700px;
           margin: 0 auto;
           padding: 60px 40px;
-          background: rgba(255,255,255,.03);
-          border: 1px solid rgba(110,168,254,.2);
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(110, 168, 254, 0.2);
           border-radius: 28px;
           position: relative;
           overflow: hidden;
@@ -1355,7 +1431,11 @@ export default function Home() {
           content: "";
           position: absolute;
           inset: 0;
-          background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(110,168,254,.1), transparent);
+          background: radial-gradient(
+            ellipse 80% 60% at 50% 0%,
+            rgba(110, 168, 254, 0.1),
+            transparent
+          );
         }
 
         .ctaBox > * {
@@ -1385,7 +1465,7 @@ export default function Home() {
         }
 
         .footer {
-          border-top: 1px solid rgba(255,255,255,.08);
+          border-top: 1px solid rgba(255, 255, 255, 0.08);
           padding: 48px 0 28px;
         }
 
@@ -1394,7 +1474,7 @@ export default function Home() {
           grid-template-columns: 1.5fr 1fr 1fr 1fr;
           gap: 40px;
           padding-bottom: 40px;
-          border-bottom: 1px solid rgba(255,255,255,.08);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .footerGrid h4 {
@@ -1405,7 +1485,7 @@ export default function Home() {
 
         .footerGrid a {
           display: block;
-          color: rgba(255,255,255,.68);
+          color: rgba(255, 255, 255, 0.68);
           font-size: 0.88rem;
           text-decoration: none;
           padding: 5px 0;
@@ -1468,7 +1548,7 @@ export default function Home() {
           }
 
           .hero {
-            padding: 74px 0 52px;
+            padding: 74px 0 46px;
           }
 
           .heroTitle {
@@ -1491,9 +1571,13 @@ export default function Home() {
           }
 
           .heroMeta {
-            gap: 12px;
             flex-direction: column;
-            margin-bottom: 34px;
+            gap: 12px;
+            margin-bottom: 22px;
+          }
+
+          .heroMeta span {
+            justify-content: center;
           }
 
           .ctaBox {
