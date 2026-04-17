@@ -1,13 +1,26 @@
-export default function Dashboard() {
-  return (
-    <div className="container" style={{padding: "60px 0"}}>
-      <h1 style={{fontSize: "32px", marginBottom: "16px"}}>
-        Dashboard
-      </h1>
+import { redirect } from "next/navigation";
+import { createClient } from "@/lib/supabase/server";
+import DashboardClient from "./ui";
 
-      <p style={{color: "#9db0d1"}}>
-        هنا سيظهر نظام توليد محتوى لينكدان لاحقًا
-      </p>
-    </div>
+export default async function DashboardPage() {
+  const supabase = await createClient();
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) redirect("/auth");
+
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("credits,email")
+    .eq("id", user.id)
+    .single();
+
+  return (
+    <DashboardClient
+      email={profile?.email || user.email || ""}
+      credits={profile?.credits ?? 0}
+    />
   );
 }
