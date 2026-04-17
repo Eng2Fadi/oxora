@@ -136,10 +136,10 @@ export default function Home() {
             </div>
 
             <div className="navActions">
-              <a href="/dashboard" className="btn ghost desktopOnly">
+              <a href="/auth" className="btn ghost desktopOnly">
                 تسجيل الدخول
               </a>
-              <a href="#pricing" className="btn primary">
+              <a href="/auth" className="btn primary">
                 ابدأ مجانًا
               </a>
               <button
@@ -174,7 +174,7 @@ export default function Home() {
               <a href="#contact" onClick={() => setMobileOpen(false)}>
                 تواصل
               </a>
-              <a href="/dashboard" onClick={() => setMobileOpen(false)}>
+              <a href="/auth" onClick={() => setMobileOpen(false)}>
                 تسجيل الدخول
               </a>
             </div>
@@ -200,7 +200,7 @@ export default function Home() {
             </p>
 
             <div className="heroActions">
-              <a href="#pricing" className="btn primary large">
+              <a href="/auth" className="btn primary large">
                 ابدأ تجربتك المجانية →
               </a>
               <a href="#how" className="btn secondary large secondaryCta">
@@ -367,7 +367,7 @@ export default function Home() {
                   <li>5 hooks يوميًا</li>
                   <li>لوحة بسيطة</li>
                 </ul>
-                <a href="#" className="btn secondary full">
+                <a href="/auth" className="btn secondary full">
                   ابدأ مجانًا
                 </a>
               </div>
@@ -387,7 +387,7 @@ export default function Home() {
                   <li>تحليلات أوضح</li>
                   <li>دعم أولوي</li>
                 </ul>
-                <a href="#" className="btn primary full">
+                <a href="/auth" className="btn primary full">
                   ابدأ Pro →
                 </a>
               </div>
@@ -505,7 +505,7 @@ export default function Home() {
               </p>
 
               <div className="ctaActions">
-                <a href="#pricing" className="btn primary">
+                <a href="/auth" className="btn primary">
                   ابدأ مجانًا
                 </a>
                 <a href="#contact" className="btn secondary">
