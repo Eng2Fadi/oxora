@@ -174,7 +174,7 @@ export default function Home() {
 
             <p className="heroDesc">
               Oxora يمنحك نظامًا أوضح لإنشاء محتوى أقوى، جذب الانتباه، وتحويل
-              LinkedIn من حضور رقمي إلى قناة فرص ومبيعات.
+              LinkedIn إلى قناة فرص ومبيعات بدل مجرد حضور رقمي.
             </p>
 
             <div className="heroActions">
@@ -250,10 +250,10 @@ export default function Home() {
           <div className="shell">
             <div className="sectionHead">
               <span className="eyebrow">المزايا الأساسية</span>
-              <h2>واجهة جذابة لا تكفي. هذه هي القيمة.</h2>
+              <h2>القيمة ليست في الذكاء الاصطناعي وحده</h2>
               <p>
-                Oxora ليس مجرد شكل جميل، بل نظام يركز على 3 عناصر حاسمة:
-                محتوى أقوى، Hook أفضل، وتحسين مبني على نتائج.
+                Oxora يركز على ما يصنع الفرق فعلًا: محتوى أقوى، hooks أفضل،
+                وتحسين مستمر مبني على نتائج قابلة للقياس.
               </p>
             </div>
 
@@ -295,7 +295,7 @@ export default function Home() {
             <div className="sectionHead">
               <span className="eyebrow">الأسعار</span>
               <h2>ابدأ خفيفًا. وسّع مع نموك.</h2>
-              <p>التسعير هنا مباشر وواضح، بلا تعقيد زائد.</p>
+              <p>تسعير مباشر وواضح، بلا طبقات معقدة ولا ضوضاء تسويقية.</p>
             </div>
 
             <div className="pricingGrid">
@@ -724,12 +724,12 @@ export default function Home() {
         }
 
         .hero {
-          padding: 110px 0 76px;
+          padding: 104px 0 64px;
           text-align: center;
         }
 
         .heroWrap {
-          max-width: 980px;
+          max-width: 940px;
         }
 
         .heroBadgeRow {
@@ -737,15 +737,15 @@ export default function Home() {
           justify-content: center;
           gap: 10px;
           flex-wrap: wrap;
-          margin-bottom: 26px;
+          margin-bottom: 24px;
         }
 
         .heroTitle {
-          font-size: clamp(2.5rem, 6vw, 5rem);
+          font-size: clamp(2.45rem, 6vw, 4.7rem);
           line-height: 1.08;
           letter-spacing: -0.045em;
-          margin: 0 auto 20px;
-          max-width: 760px;
+          margin: 0 auto 18px;
+          max-width: 720px;
           font-weight: 800;
         }
 
@@ -757,10 +757,10 @@ export default function Home() {
         }
 
         .heroDesc {
-          font-size: clamp(1rem, 2vw, 1.16rem);
+          font-size: clamp(1rem, 2vw, 1.12rem);
           color: #94a3b8;
-          max-width: 610px;
-          margin: 0 auto 34px;
+          max-width: 580px;
+          margin: 0 auto 30px;
           line-height: 1.85;
         }
 
@@ -769,27 +769,28 @@ export default function Home() {
           justify-content: center;
           gap: 14px;
           flex-wrap: wrap;
-          margin-bottom: 34px;
+          margin-bottom: 22px;
         }
 
         .heroMeta {
           display: flex;
           justify-content: center;
-          gap: 24px;
+          gap: 18px;
           flex-wrap: wrap;
-          color: #94a3b8;
-          font-size: 0.82rem;
+          color: #a7b4c9;
+          font-size: 0.85rem;
+          margin-bottom: 42px;
         }
 
         .heroMeta span {
-          display: flex;
+          display: inline-flex;
           align-items: center;
-          gap: 6px;
+          gap: 8px;
         }
 
         .heroMeta i {
-          width: 5px;
-          height: 5px;
+          width: 6px;
+          height: 6px;
           border-radius: 50%;
           background: #22d3ee;
           display: inline-block;
@@ -797,7 +798,7 @@ export default function Home() {
 
         .mockup {
           max-width: 820px;
-          margin: 48px auto 0;
+          margin: 0 auto;
           position: relative;
         }
 
@@ -807,7 +808,7 @@ export default function Home() {
           inset: -2px;
           border-radius: 22px;
           background: linear-gradient(135deg, #6ea8fe, #8b5cf6);
-          opacity: 0.2;
+          opacity: 0.18;
           filter: blur(20px);
           z-index: -1;
         }
@@ -906,7 +907,7 @@ export default function Home() {
         }
 
         .proof {
-          padding: 18px 0 8px;
+          padding: 10px 0 8px;
         }
 
         .proofGrid {
@@ -916,12 +917,12 @@ export default function Home() {
         }
 
         .proofCard {
-          padding: 24px 18px;
+          padding: 22px 18px;
           text-align: center;
         }
 
         .proofNumber {
-          font-size: 2rem;
+          font-size: 1.95rem;
           font-weight: 800;
           background: linear-gradient(135deg, #6ea8fe, #8b5cf6);
           -webkit-background-clip: text;
@@ -937,7 +938,7 @@ export default function Home() {
         }
 
         .section {
-          padding: 84px 0;
+          padding: 82px 0;
         }
 
         .sectionAlt {
@@ -947,11 +948,11 @@ export default function Home() {
 
         .sectionHead {
           text-align: center;
-          margin-bottom: 52px;
+          margin-bottom: 50px;
         }
 
         .sectionHead h2 {
-          font-size: clamp(2rem, 4vw, 3rem);
+          font-size: clamp(1.95rem, 4vw, 2.8rem);
           margin: 14px 0 0;
           line-height: 1.12;
           letter-spacing: -0.04em;
@@ -960,7 +961,7 @@ export default function Home() {
         .sectionHead p {
           margin: 16px auto 0;
           color: #94a3b8;
-          font-size: 1.02rem;
+          font-size: 1rem;
           max-width: 560px;
           line-height: 1.75;
         }
